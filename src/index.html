@@ -13,20 +13,28 @@
   </head>
 
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-    </form>
+    <h1>Search for your image</h1>
+    <div class="container">
+      <form class="search" id="search-form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+      </form>
+    </div>
 
-    <div class="cols" id="gallery">
+    <div class="gallery">
       <!-- Список с карточками изображений -->
     </div>
 
-    <button id="search-btn" type="submit" data-action="load-more">
+    <button
+      class="load-more"
+      id="search-btn"
+      type="submit"
+      data-action="load-more"
+    >
       Load more
     </button>
   </body>

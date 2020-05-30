@@ -1,56 +1,25 @@
-{{!-- <div class="photo-card">
-    <img src="{{webformatURL}}" alt="{{largeImageURL}}" width="640" height="400" />
-    <div class="stats">
-        <p class="stats-item">
+{{#each this}}
+<div class='card'>
+    <img src="{{webformatURL}}" alt="{{tags}}" width="{{webformatWidth}}" height="{{webformatHeight}}"
+        data-largeImg="{{largeImageURL}}" />
+    <div class='card-body'>
+        <h3>{{tags}}</h3>
+        <div class='card-text'>
             <i class="material-icons">thumb_up</i>
             {{likes}}
-        </p>
-        <p class="stats-item">
+        </div>
+        <div class='card-text'>
             <i class="material-icons">visibility</i>
             {{views}}
-        </p>
-        <p class="stats-item">
+        </div>
+        <div class='card-text'>
             <i class="material-icons">comment</i>
             {{comments}}
-        </p>
-        <p class="stats-item">
+        </div>
+        <div class='card-text'>
             <i class="material-icons">cloud_download</i>
             {{downloads}}
-        </p>
-    </div>
-</div> --}}
-
-{{#each this}}
-<div class="col">
-    <div class="container">
-        <div class="front" style="background-image: url({{webformatURL}})">
-            {{!-- <div class="inner">
-            <p>{{tags}}</p>
-        </div> --}}
         </div>
-        <div class="back">
-            <div class="inner">
-                <div class="stats">
-                    <p class="stats-item">
-                        <i class="material-icons">thumb_up</i>
-                        {{likes}}
-                    </p>
-                    <p class="stats-item">
-                        <i class="material-icons">visibility</i>
-                        {{views}}
-                    </p>
-                    <p class="stats-item">
-                        <i class="material-icons">comment</i>
-                        {{comments}}
-                    </p>
-                    <p class="stats-item">
-                        <i class="material-icons">cloud_download</i>
-                        {{downloads}}
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 {{/each}}
